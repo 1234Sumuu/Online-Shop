@@ -3,7 +3,7 @@ use App\Http\Controllers\ProductController;
 $total=0;
 if(Session::has('user'))
 {
- // $total= ProductController::cartItem();
+ $total= ProductController::cartItem();
 }
 
 ?>
@@ -17,7 +17,7 @@ if(Session::has('user'))
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="/">E-Comm</a>
+        <a class="navbar-brand" href="/">Online Shop</a>
       </div>
   
       <!-- Collect the nav links, forms, and other content for toggling -->
@@ -44,6 +44,7 @@ if(Session::has('user'))
           </li>
           @else
           <li><a href="/login">Login</a></li>
+          <li><a href="/register">Register</a></li>
           @endif
         </ul>
       </div><!-- /.navbar-collapse -->
