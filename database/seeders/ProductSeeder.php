@@ -14,6 +14,16 @@ class ProductSeeder extends Seeder
      */
     public function run()
     {
+
+        // DB::table('products')->insert(
+        //     [
+        //         'name'=>'LG mobile',
+        //         "price"=>"800",
+        //         "description"=>"A smartphone with 8gb ram and much more feature",
+        //         "category"=>"mobile",
+        //         "gallery"=>"https://www.lg.com/in/images/mobile-phones/md06155757/gallery/Platinum_01-1100-V4.jpg"
+        //     ]);
+
         DB::table('products')->insert([
             [
                 'name'=>'Oppo mobile',
